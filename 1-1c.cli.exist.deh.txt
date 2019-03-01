@@ -1,0 +1,14 @@
+#entered on cli to test folders/file exists
+
+if test -d /etc
+then
+{
+echo "directory does exist"
+}
+fi
+#single line, check directory
+if test -d /locations2; then { echo "directory does exist"; }; fi
+#single line check exist
+if test -e /locations2; then { echo "directory does exist"; }; fi
+#single line check symbolic link
+if test -h /locations2; then { echo "directory does exist"; }; fi
