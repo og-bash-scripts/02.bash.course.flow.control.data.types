@@ -1,0 +1,16 @@
+#entered in cli
+depts=("it" "hr" "sale")
+echo $depts
+echo ${depts[*]}
+echo ${depts[0]}
+echo ${depts[1]}
+echo ${depts[2]}
+echo ${depts[3]}
+depts[3]="exec"
+echo ${depts[*]}
+echo ${#depts[*]} #count items in array
+echo ${depts[*]:2:1} #grab third item in array
+echo ${depts[*]/sales/marketing} #replace
+depts2=`echo ${depts[*]/sales/marketing} #save the replace`
+echo ${depts2[*]}
+sort <<<"${depts[*]}"
