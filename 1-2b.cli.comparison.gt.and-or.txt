@@ -1,0 +1,7 @@
+#entered in cli
+citycode="hfx"
+projdays=4
+if test $citycode = "hfx" && test $projdays -gt 3; then echo "All true."; fi
+if test $citycode = "hfx" && test $projdays -gt 8; then echo "All true."; fi
+if test $citycode = "hfx" || test $projdays -gt 3; then echo "At least one condition is true."; fi
+if test $citycode = "hfx" || test $projdays -gt 8; then echo "At least one condition is true."; fi
