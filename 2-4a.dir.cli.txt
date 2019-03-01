@@ -1,0 +1,13 @@
+#entered in cli
+srcloc="/scripts"
+echo $srcloc
+dataloc="/datafiles"
+pwd
+cd $dataloc
+pwd
+echo ${DIRSTACK[*]}
+pushd $srcloc #add dir to dirstack
+pushd $dataloc
+cd /
+popd #remove dir from dirstack
+popd
