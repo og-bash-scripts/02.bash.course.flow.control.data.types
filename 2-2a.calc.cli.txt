@@ -1,0 +1,3 @@
+#requires bc to be instealled; entered in cmd line
+echo $((579*2))
+echo "579*2.5" | bc
