@@ -1,0 +1,11 @@
+#entered in cli
+locationcode="hfx123"
+echo ${#locationcode}
+echo `expr "$locationcode" : '\(..\)'`
+echo `expr "$locationcode" : '\(a-c\)'`
+echo `expr "$locationcode" : '\(a-j\)'`
+echo `expr "$locationcode" : '\(a-zA-Z0-9\)'`
+echo ${locationcode:0:3}
+echo ${locationcode:3:3}
+echo ${locationcode//hfx/yhz}
+locationcode=${locationcode//hfx/yhz}
