@@ -1,0 +1,8 @@
+#enter in cli with arrays
+cities=("hfx" "tor")
+echo $cities
+echo ${citie[0]}
+echo ${citie[1]}
+for ((i=0; i<${#cities[@]};i++)); do
+echo ${cities[$i]}
+done
