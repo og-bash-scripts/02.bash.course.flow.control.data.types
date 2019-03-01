@@ -1,0 +1,10 @@
+#entered on cli
+
+numdays=400
+echo numdays
+if test "$numdays" -gt 300
+then
+{
+echo "Over budget!"
+}
+fi
