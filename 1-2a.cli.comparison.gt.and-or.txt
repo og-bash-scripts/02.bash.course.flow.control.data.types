@@ -1,0 +1,4 @@
+#entered in cli
+test 3 -gt 4 && echo "Yes it is." || echo "No it is not!"
+test 6 -gt 4 && echo "Yes it is." || echo "No it is not!"
+
